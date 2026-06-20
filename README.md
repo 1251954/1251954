@@ -1,3 +1,3 @@
 <div align="center">
-  <img src="./terminal.svg?v=2" alt="Terminal Output" />
+  <img src="./terminal.svg" alt="Terminal Output" />
 </div>
