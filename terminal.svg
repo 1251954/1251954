@@ -2,24 +2,22 @@
   <style>
     /* (dark mode) */
     :root { --bg: #1a1b26;
-    --text: #dcdfe4;
-    --prompt: #e95678;
-    --cmd: #fab387;
+    --prompt: #e95678; 
+    --cmd: #000000;
     --out: #9299a8;
-    --str: #c0caf5;
+    --str: #fab387; /* main message */
     --cursor-color: #e95678; }
     
     /* (light mode) */
     @media (prefers-color-scheme: light) {
       :root { --bg: #eff1f5;
-    --text: #4c4f69;
     --prompt: #1e66f5;
     --cmd: #8839ef;
     --out: #6c6f85;
     --str: #40a02b;
     --cursor-color: #1e66f5; }
     }
-    .bg { fill: black; }
+    .bg { fill: transparent; }
     .text { font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace; font-size: 15px; fill: var(--text); }
     .prompt { fill: var(--prompt); font-weight: bold; }
     .cmd { fill: var(--cmd); }
