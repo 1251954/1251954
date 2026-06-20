@@ -1,24 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="650" height="400" viewBox="0 0 650 400">
   <style>
     /* (dark mode) */
-    :root { --bg: #1a1b26;
-    --prompt: #e95678; 
-    --cmd: #000000;
-    --out: #9299a8;
+    :root {
+    
+    --crimsonRed: #e95678;
+    
+    --prompt: var(--crimsonRed); /* the dollar sign ($) */
+    --cmd: #424242; /* terminal commands */
+    --out: #9299a8; /* terminal response */
     --str: #fab387; /* main message */
-    --cursor-color: #e95678; }
+    --cursor-color: var(--crimsonRed); }
     
     /* (light mode) */
     @media (prefers-color-scheme: light) {
-      :root { --bg: #eff1f5;
-    --prompt: #1e66f5;
+      :root {
+    
+    --strongBlue: #1e66f5; 
+    
+    --prompt: var(--strongBlue);
     --cmd: #8839ef;
     --out: #6c6f85;
     --str: #40a02b;
-    --cursor-color: #1e66f5; }
+    --cursor-color: var(--strongBlue); }
     }
+    
     .bg { fill: transparent; }
-    .text { font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace; font-size: 15px; fill: var(--text); }
+    .text { font-family: "JetBrains Mono", "Cascadia Code", "Segoe UI Mono", monospace; font-size: 15px }
     .prompt { fill: var(--prompt); font-weight: bold; }
     .cmd { fill: var(--cmd); }
     .out { fill: var(--out); }
