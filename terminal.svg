@@ -26,8 +26,8 @@
     @keyframes s9 { 0% { transform: translateX(0); } 95% { transform: translateX(90px); opacity: 1; } 100% { transform: translateX(90px); opacity: 0; } }
     
     /* Sequence Timing */
-    .l1 { animation-delay: 0.5s; } .c1 { animation: s1 0.6s ease-out forwards; animation-delay: 1.0s; }
-    .l2 { animation-delay: 1.8s; } .l3 { animation-delay: 2.5s; } .c3 { animation: s3 0.3s ease-out forwards; animation-delay: 3.0s; }
+    .l1 { animation-delay: 0.4s; } .c1 { animation: s1 0.6s ease-out forwards; animation-delay: 1.0s; }
+    .l2 { animation-delay: 1.9s; } .l3 { animation-delay: 2.5s; } .c3 { animation: s3 0.3s ease-out forwards; animation-delay: 3.0s; }
     .l4 { animation-delay: 3.5s; } .l5 { animation-delay: 3.6s; } .l6 { animation-delay: 4.4s; }
     .c6 { animation: s6 1.0s ease-out forwards; animation-delay: 4.9s; } .l7 { animation-delay: 6.1s; }
     .l8 { animation-delay: 6.2s; } .l9 { animation-delay: 7.0s; } .c9 { animation: s9 0.8s ease-out forwards; animation-delay: 7.5s; }
