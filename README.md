@@ -1,15 +1,14 @@
-```bash
-$ whoami
-> Pancho
+<div align="center">
 
-$ ls
-> about.txt
-> work.sh
+<details>
+  <summary style="cursor: pointer;">
+    <!-- This calls the looping dot animation -->
+    <img src="./intro.svg" alt="Click for more info..." />
+  </summary>
+  
+  <br>
 
-$ cat about.txt
-> "I have concluded that the torments of adversity"
-> "refine my strenght."
+  <img src="./terminal.svg" alt="Terminal Output" />
+</details>
 
-$ ./work.sh
-> [1] Kiriko - companion :)
-> [2] Terminal Tools 42
+</div>
