@@ -1,1 +1,1 @@
-![Pancho's GitHub Stats](https://github-readme-stats.vercel.app/api?username=1251954&show_icons=true&theme=shadow_red)
+![Pancho's GitHub Stats](https://github-readme-stats.vercel.app/api?username=1251954&show_icons=true&theme=transparent)
