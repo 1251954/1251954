@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="650" height="320" viewBox="0 0 650 320">
+<svg xmlns="http://www.w3.org/2000/svg" width="650" height="380" viewBox="0 0 650 380">
   <style>
     .bg { fill: #2E3440; rx: 8px; } /* Dark terminal background */
     .text { font-family: 'Consolas', 'Courier New', monospace; font-size: 15px; opacity: 0; animation: appear 0.1s forwards; }
