@@ -1,8 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="650" height="400" viewBox="0 0 650 400">
   <style>
-    /* Catppuccin Mocha (dark) */
+    /* Catppuccin Mocha (dark mode) */
     :root { --bg: #1e1e2e; --text: #cdd6f4; --prompt: #89b4fa; --cmd: #cba6f7; --out: #9399b2; --str: #a6e3a1; --cursor-color: #f5e0dc; }
-    /* Catppuccin Latte (light) — the official light counterpart */
+    
+    /* Catppuccin Latte (light mode) */
     @media (prefers-color-scheme: light) {
       :root { --bg: #eff1f5; --text: #4c4f69; --prompt: #1e66f5; --cmd: #8839ef; --out: #6c6f85; --str: #40a02b; --cursor-color: #dc8a78; }
     }
@@ -95,8 +96,8 @@
   <text x="20" y="195" class="text prompt line l6">$ </text>
   <text x="38" y="195" class="text cmd" textLength="117" lengthAdjust="spacingAndGlyphs" clip-path="url(#clipCat)">cat about.txt</text>
   <rect class="cursor cursor6" x="38" y="182" width="8" height="15" />
-  <text x="20" y="220" class="text str line l7">&gt; "I have concluded that the torments of adversity"</text>
-  <text x="20" y="245" class="text str line l8">&gt; "refine my strength."</text>
+  <text x="20" y="220" class="text str line l7">&gt; "I have concluded that the torments of adversity</text>
+  <text x="20" y="245" class="text str line l8">&gt; refine my strength."</text>
 
   <!-- ./work.sh -->
   <text x="20" y="285" class="text prompt line l9">$ </text>
