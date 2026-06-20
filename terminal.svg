@@ -16,30 +16,34 @@
     @keyframes pop { to { opacity: 1; } }
     @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
 
-    /* Typing masks use var(--bg) to reveal text */
-    @keyframes s1 { 0% { transform: translateX(0); } 95% { transform: translateX(60px); opacity: 1; } 100% { transform: translateX(60px); opacity: 0; } }
-    @keyframes s3 { 0% { transform: translateX(0); } 95% { transform: translateX(25px); opacity: 1; } 100% { transform: translateX(25px); opacity: 0; } }
-    @keyframes s6 { 0% { transform: translateX(0); } 95% { transform: translateX(125px); opacity: 1; } 100% { transform: translateX(125px); opacity: 0; } }
-    @keyframes s9 { 0% { transform: translateX(0); } 95% { transform: translateX(90px); opacity: 1; } 100% { transform: translateX(90px); opacity: 0; } }
+    /* Cursor visibility animation: Show only during the typing phase */
+    @keyframes show-hide { 0% { opacity: 0; } 5% { opacity: 1; } 95% { opacity: 1; } 100% { opacity: 0; } }
+    .cursor-group { opacity: 0; }
     
-    /* Timing: Cursor group (c) appears slightly before the text (l) pops in */
-    /* Command 1 */
-    .c1 { animation: s1 0.6s ease-out forwards; animation-delay: 0.8s; opacity: 1; }
+    /* Typing masks */
+    @keyframes s1 { 0% { transform: translateX(0); } 100% { transform: translateX(60px); } }
+    @keyframes s3 { 0% { transform: translateX(0); } 100% { transform: translateX(25px); } }
+    @keyframes s6 { 0% { transform: translateX(0); } 100% { transform: translateX(125px); } }
+    @keyframes s9 { 0% { transform: translateX(0); } 100% { transform: translateX(90px); } }
+    
+    /* Timing: Cursors (c) are active only during typing. Text (l) pops in when typing starts. */
+    /* Cmd 1 */
+    .c1 { animation: show-hide 0.6s ease-out forwards; animation-delay: 0.8s; }
     .l1 { animation-delay: 0.8s; } 
     
-    /* Command 2 (ls) */
-    .c3 { animation: s3 0.3s ease-out forwards; animation-delay: 2.8s; opacity: 1; }
+    /* Cmd 2 */
+    .c3 { animation: show-hide 0.3s ease-out forwards; animation-delay: 2.8s; }
     .l3 { animation-delay: 2.8s; } 
     
-    /* Command 3 (cat) */
-    .c6 { animation: s6 1.0s ease-out forwards; animation-delay: 4.7s; opacity: 1; }
+    /* Cmd 3 */
+    .c6 { animation: show-hide 1.0s ease-out forwards; animation-delay: 4.7s; }
     .l6 { animation-delay: 4.7s; } 
     
-    /* Command 4 (work.sh) */
-    .c9 { animation: s9 0.8s ease-out forwards; animation-delay: 7.3s; opacity: 1; }
+    /* Cmd 4 */
+    .c9 { animation: show-hide 0.8s ease-out forwards; animation-delay: 7.3s; }
     .l9 { animation-delay: 7.3s; }
     
-    /* Output lines (no masks) */
+    /* Output timing */
     .l2 { animation-delay: 1.5s; } .l4 { animation-delay: 3.2s; } .l5 { animation-delay: 3.3s; }
     .l7 { animation-delay: 6.2s; } .l8 { animation-delay: 6.3s; } .l10 { animation-delay: 8.6s; } .l11 { animation-delay: 8.7s; }
     
@@ -50,21 +54,21 @@
   <rect width="100%" height="100%" class="bg" />
   
   <text x="20" y="40" class="text line l1"><tspan class="prompt">$ </tspan><tspan class="cmd">whoami</tspan></text>
-  <g class="c1"><rect x="38" y="26" width="100" height="18" fill="var(--bg)" /><rect x="38" y="27" width="8" height="15" class="cursor" /></g>
+  <g class="cursor-group c1"><rect x="38" y="26" width="100" height="18" fill="var(--bg)" /><rect x="38" y="27" width="8" height="15" class="cursor" /></g>
   <text x="20" y="65" class="text out line l2">&gt; Pancho</text>
   
   <text x="20" y="105" class="text line l3"><tspan class="prompt">$ </tspan><tspan class="cmd">ls</tspan></text>
-  <g class="c3"><rect x="38" y="91" width="100" height="18" fill="var(--bg)" /><rect x="38" y="92" width="8" height="15" class="cursor" /></g>
+  <g class="cursor-group c3"><rect x="38" y="91" width="100" height="18" fill="var(--bg)" /><rect x="38" y="92" width="8" height="15" class="cursor" /></g>
   <text x="20" y="130" class="text out line l4">&gt; about.txt</text>
   <text x="20" y="155" class="text out line l5">&gt; work.sh</text>
   
   <text x="20" y="195" class="text line l6"><tspan class="prompt">$ </tspan><tspan class="cmd">cat about.txt</tspan></text>
-  <g class="c6"><rect x="38" y="181" width="150" height="18" fill="var(--bg)" /><rect x="38" y="182" width="8" height="15" class="cursor" /></g>
+  <g class="cursor-group c6"><rect x="38" y="181" width="150" height="18" fill="var(--bg)" /><rect x="38" y="182" width="8" height="15" class="cursor" /></g>
   <text x="20" y="220" class="text str line l7">&gt; "I have concluded that the torments of adversity"</text>
   <text x="20" y="245" class="text str line l8">&gt; "refine my strength."</text>
   
   <text x="20" y="285" class="text line l9"><tspan class="prompt">$ </tspan><tspan class="cmd">./work.sh</tspan></text>
-  <g class="c9"><rect x="38" y="271" width="120" height="18" fill="var(--bg)" /><rect x="38" y="272" width="8" height="15" class="cursor" /></g>
+  <g class="cursor-group c9"><rect x="38" y="271" width="120" height="18" fill="var(--bg)" /><rect x="38" y="272" width="8" height="15" class="cursor" /></g>
   <text x="20" y="310" class="text out line l10">&gt; [1] Kiriko - companion :)</text>
   <text x="20" y="335" class="text out line l11">&gt; [2] Terminal Tools 42</text>
   
