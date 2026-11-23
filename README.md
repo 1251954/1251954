@@ -11,14 +11,14 @@ $ ls
 > work.sh
 ```
 
-## Stats
+##
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=1251954&show_icons=true&bg_color=000000&title_color=DC143C&text_color=FFFFFF&icon_color=DC143C&ring_color=DC143C&border_color=DC143C" alt="GitHub stats" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=1251954&layout=compact&bg_color=000000&title_color=DC143C&text_color=FFFFFF&border_color=DC143C" alt="Top languages" />
 </p>
 
-## Snake
+##
 
 <p align="center">
   <picture>
