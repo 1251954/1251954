@@ -20,10 +20,9 @@ $ ls
 
 ## Snake
 
-![snake animation](https://github.com/<1251954>/<1251954>/blob/output/github-contribution-grid-snake2.svg)
-
-## Activity graph
-
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=1251954&bg_color=000000&color=DC143C&line=DC143C&point=FFFFFF&area=true&hide_border=true" alt="Contribution graph" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/1251954/1251954/output/github-contribution-grid-snake-dark.svg">
+    <img alt="snake" src="https://raw.githubusercontent.com/1251954/1251954/output/github-contribution-grid-snake.svg">
+  </picture>
 </p>
